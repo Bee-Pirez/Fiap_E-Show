@@ -75,4 +75,26 @@ document.querySelector('form').addEventListener('submit', function (e) {
       //vincule a td na tr
       tr.appendChild(td);
   })
+  // vincular a tr criada no tbody
+  tbody.appendChild(tr);
+
+  //limpar os dados digitados
+  this.reset();
+
+  //criando os cards
+  let cards = document.querySelector('.cards-shows');
+  cards.innerHTML +=`
+      <div class="col-md-3 my-3">
+          <div class="card">
+              <img src="${card[5]}" class="card-img-top" alt="Show">
+              <div class="card-body">
+                  <h2 class="card-title display-6">${card[0]}</h2>
+                  <p class="card-text lead">Data: ${card[1]}</p>                    
+                  <a href="#" class="btn" style="background-color: rgb(255, 102, 0)">Comprar Ingresso</a>
+              </div>
+          </div>
+      </div>
+  `
+  //zerando o array após inserir na página
+  card.splice(0);
 });

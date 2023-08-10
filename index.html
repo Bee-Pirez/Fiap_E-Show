@@ -7,11 +7,11 @@
   <!--BS CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<body>
-  <header class="py-2" style="background-color: rgb(255, 102, 0)">
-    <h1 class="display-5 text-light text-center">E-Show</h1>
+<body class="bg-dark">
+  <header class="container py-2">
+    <h1 class="display-8 text-light text-left">E-Show</h1>
   </header>
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleAutoplaying" class="carousel slide container" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="./images/banner1.jpg" class="d-block w-100" alt="...">
@@ -33,42 +33,42 @@
     </button>
   </div>
 
-  <main>
+  <main class="container">
     <section class="border border-1 rounded-1 my-5 p-4">
-      <h2 class="display-5">Cadastrar Show</h2>
+      <h2 class="display-5 text-light">Cadastrar Show</h2>
       <form class="dados" id="dados" method="post" action="">
         <div class="row mb-3">
             <div class="col-md-4 my-3">
-                <label for="artista" class="form-label">Artista/Banda</label>
+                <label for="artista" class="form-label text-light">Artista/Banda</label>
                 <input type="text" class="form-control" id="artista" name="artista"
                     placeholder="Ex: Led Zeppelin" required>
             </div>
 
             <div class="col-md-4 my-3">
-              <label for="dataShow" class="form-label">Data do Show</label>
+              <label for="dataShow" class="form-label text-light">Data do Show</label>
               <input type="datetime-local" class="form-control" id="dataShow" name="dataShow" required>
             </div>
 
             <div class="col-md-4 my-3">
-              <label for="cidade" class="form-label">Cidade</label>
+              <label for="cidade" class="form-label text-light">Cidade</label>
               <input type="text" class="form-control" id="cidade" name="Cidade" placeholder="Ex: São Paulo"
                   required>
             </div>
 
             <div class="col-md-4 my-3">
-              <label for="localShow" class="form-label">Local do Show</label>
+              <label for="localShow" class="form-label text-light">Local do Show</label>
               <input type="text" class="form-control" id="localShow" name="localShow"
                   placeholder="Ex: Allianz Park" required>
             </div>
 
             <div class="col-md-4 my-3">
-              <label for="mediaIngresso" class="form-label">Valor médio do Ingresso</label>
+              <label for="mediaIngresso" class="form-label text-light">Valor médio do Ingresso</label>
               <input type="text" class="form-control" id="mediaIngresso" name="localShow"
                   placeholder="Ex: 345.60" required>
             </div>
 
             <div class="col-md-4 my-3">
-              <label for="banner" class="form-label">Banner</label>
+              <label for="banner" class="form-label text-light">Banner</label>
               <input type="file" class="form-control" id="banner" name="banner" required onchange="validateFile()">
             </div>
         </div>
@@ -79,7 +79,7 @@
     </section>
 
     <section class="border border-1 rounded-1 my-5 p-4">
-      <h2 class="display-5">Próximos shows</h2>
+      <h2 class="display-5 text-light">Próximos shows</h2>
       <table id="resumo" class="table table-hover text-center align-middle">
         <thead class="bg-danger text-light">
             <tr id="cabecalho center">
@@ -96,7 +96,7 @@
     </section>
 
     <section class="border border-1 rounded-1 my-5 p-4">
-      <h2 class="display-5">Compre seus ingressos</h2>
+      <h2 class="display-5 text-light">Compre seus ingressos</h2>
       <div class="row cards-shows text-center"></div>
     </section>
   </main>

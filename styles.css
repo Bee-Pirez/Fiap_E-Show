@@ -1,0 +1,17 @@
+::-webkit-scrollbar{
+  width: 1em;
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(255, 102, 0);
+  border-radius: 1em;
+}
+
+.proximoShow{
+  overflow: auto;
+  overflow-x: scroll;
+}
